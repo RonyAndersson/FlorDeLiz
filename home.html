@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="logoFL/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="splide-4.1.3/dist/css/splide.min.css">
+    <script src="splide-4.1.3/dist/js/splide.min.js"></script>
+
+    <title>Flor de Liz</title>
+
+</head>
+
+<body>
+
+    <!-- INICIO DO CABEÇALHO -->
+
+    <header id="cabecalho">
+
+        <div id="logo">
+             <h1>Flor de Liz</h1>
+             <span>Studio de Jogos</span>
+        </div>
+       
+
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Loja</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <a class="carrinho" href="#"><i class="bi bi-cart4"></i></a>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- FIM DO CABEÇALHO -->
+
+
+    <main id="container"> <!-- CONTENEDOR PRINCIPAL-->
+    
+    <!-- ------ SLIDER ------ -->
+    <div id="slide_container">
+        
+        <section class="splide" aria-label="Basic Structure Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="jogos/jogo1.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="jogos/jogo2.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="jogos/jogo3.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="jogos/jogo4.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+    
+
+    <!-- FIM DO SLIDER -->
+
+      <!-- NOVIDADES -->
+    
+    <article id="novidades">
+        <h2>Novidades</h2>
+       
+        <div id="grid_cards">
+
+            <section class="cards__container">
+                
+                <div class="card__image card1">
+                    <img class="img" src="jogos/jogo1.jpg" alt="">
+                </div>
+
+                <div class="card__description">
+                    <h3 class="card__name">Red Alert 3</h3>
+                    <span class="card__price">R$300</span>
+                </div>
+
+                <div class="card__btn">
+                    <button class="btn">Comprar</button>
+                </div>
+                
+            </section>
+
+            <section class="cards__container">
+                
+                <div class="card__image card2">
+                    <img class="img" src="jogos/jogo3.jpg" alt="">
+                </div>
+
+                <div class="card__description">
+                    <h3 class="card__name">Space Invaders</h3>
+                    <span class="card__price">R$150</span>
+                </div>
+
+                <div class="card__btn">
+                    <button class="btn">Comprar</button>
+                </div>
+                
+            </section>
+            
+            <section class="cards__container">
+                
+                <div class="card__image card3">
+                    <img class="img" src="jogos/jogo2.jpg" alt="">
+                </div>
+
+                <div class="card__description">
+                    <h3 class="card__name">Red Dead</h3>
+                    <span class="card__price">R$230</span>
+                </div>
+
+                <div class="card__btn">
+                    <button class="btn">Comprar</button>
+                </div>
+                
+            </section>
+
+            <section class="cards__container">
+                
+                <div class="card__image card4">
+                    <img class="img" src="jogos/jogo4.jpg" alt="">
+                </div>
+
+                <div class="card__description">
+                    <h3 class="card__name">Farcry6</h3>
+                    <span class="card__price">R$130</span>
+                </div>
+
+                <div class="card__btn">
+                    <button class="btn">Comprar</button>
+                </div>
+                
+            </section>
+
+            <section class="cards__container">
+                
+                <div class="card__image card5">
+                    <p>Em Breve</p>
+                    <i class="bi bi-hourglass-split"></i>
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </article>
+
+    <!-- FIM DE NOVIDADES -->
+
+    </main>
+    
+    <!-- FOOTER -->
+    <footer id="footer">
+        <p>&copy Designed by <a href="#">Grupo10</a></p>
+    </footer>
+
+    <!-- SCRIPT SLIDER -->
+    <script>
+        var splide = new Splide( '.splide' );
+        splide.mount();
+    </script>
+
+
+
+</body>
+
+</html>
