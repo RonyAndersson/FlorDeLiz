@@ -206,7 +206,7 @@ img{
     display: flex;
     flex-direction: column;
     background-color: var(--cor-3);
-    height: 35rem;
+    height: 38rem;
     border: 2px solid rebeccapurple;
     border-radius: 2rem;
     transition: all 400ms;
@@ -279,6 +279,8 @@ img{
 }
 
 .btn {
+    display: flex;
+    gap: 1rem;
     background-color: var(--cor-5);
     border-radius: 1rem;
     color: var(--cor-0);
@@ -295,6 +297,14 @@ img{
   button{
     cursor: pointer;
   }
+
+.descricao{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-p2);
+    border-bottom: 2px solid var(--cor-p2);
+    margin-top: 2px;
+}  
 
 
 /* --------- FOOTER --------- */

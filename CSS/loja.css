@@ -162,7 +162,7 @@ body{
 .grid_container{
     display: grid;
     grid-template-columns: repeat(3, 25rem);
-    grid-template-rows: repeat(3, 35rem);
+    grid-template-rows: repeat(3, 38rem);
     gap: 4rem;
 }
 
@@ -221,6 +221,15 @@ body{
     color: var(--cor-0);
 }
 
+.descricao{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-p2);
+    border-bottom: 2px solid var(--cor-p2);
+    margin-top: 2px;
+}  
+
+
 .card__btn {
     display: flex;
     justify-content: center;
@@ -230,6 +239,8 @@ body{
 }
 
 .btn {
+    display: flex;
+    gap: 1rem;
     background-color: var(--cor-5);
     border-radius: 1rem;
     color: var(--cor-0);
@@ -248,44 +259,6 @@ body{
     cursor: pointer;
   }
 
-/* #container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5rem;
-    margin: 2rem auto;
-    width: 90%;
-    padding: 4rem;
-    background-color: #333333;
-}
-.grid_container{
-    display: grid;
-    grid-template-columns: repeat(3, 25rem);
-    grid-template-rows: repeat(3, 30rem);
-    gap: 3rem;
-}
-
-.card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    text-transform: uppercase;
-    font-size: 5rem;
-    border-radius: 1rem;
-    border: 2px solid rebeccapurple;
-    transition: all 500ms;
-}
-
-.card:hover{
-    transform: scale(1.1,1.1);
-}
-
-.card__img{
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-} */
 
 /* ------- BARRA DE BUSCA -------- */
 
