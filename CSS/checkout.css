@@ -1,0 +1,271 @@
+/*----------- ESTILOS GERAIS ------------*/
+
+@font-face {
+    font-family: Menu;
+    src: url(../font8bit/PixelColeco-4vJW.ttf);
+}
+
+@font-face {
+    font-family: Logo;
+    src: url(../font8bit/PixelEmulator-xq08.ttf);
+}
+
+:root {
+    --cor-0: #f9f9f9;
+    --cor-1: #a4a4a4;
+    --cor-2: #828282;
+    --cor-3: #333333;
+    --cor-4: #212121;
+    --cor-5: #171717;
+    --cor-p1: #DA1212;
+    --cor-p2: #0bbe56;
+
+    --font1: Menu;
+    --font2: Logo;
+}
+
+/* -------------- VARIAVEIS ---------------- */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}   
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 16px;
+    background-color: var(--cor-5);
+}
+
+/* ----------- CABEÇALHO E MENÚ ------------ */
+
+#cabecalho{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    height: 8rem;
+}
+
+#logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Logo;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cor-0);
+    text-shadow: -1px 1px 1px var(--cor-1);
+    width: 15%;
+    row-gap: 1rem;
+    overflow: hidden;
+}
+
+#logo span{
+    font-size: 1.5rem;
+    color: orange;
+}
+
+#logo h1{
+    animation: banner 5s linear infinite;
+}
+
+@keyframes banner{
+    
+    0%{
+        transform: translateX(-100%);                
+    }
+    
+    50%{
+        transform: translateX(0%);
+    }
+
+    100%{
+        transform: translateX(100%);            
+    }
+}
+
+#menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+#menu ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4rem;
+    width: 90%;
+    height: 8rem;
+}
+
+#menu span{
+    color: var(--cor-0);
+}
+
+#menu ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 3rem;
+    box-shadow: -2px 1px 1px var(--cor-0);
+    background-color: var(--cor-p1);
+    transition: all 400ms;
+}
+
+#menu ul li a{
+    text-align: center;
+    padding: .5rem;
+    font-family: Menu;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    color: var(--cor-0);
+}
+
+#menu ul li:hover{
+    transform: scale(1.1,1.1);
+}
+
+.carrinho{
+    font-size:3rem;
+    color: var(--cor-0);
+}
+
+/* --------- MAIN -------- */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    padding:25px;
+    min-height: 100vh;
+    width: 90%
+}
+
+.container form{
+    padding:20px;
+    width:50%;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+}
+  
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+}
+  
+.container form .row .col{
+    flex:1 1 25rem;
+}
+  
+.container form .row .col .title{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 20px;
+    color: var(--cor-0);
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+  
+.container form .row .col .inputBox{
+    color: var(--cor-0);
+    margin:15px 0;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.container form .row .col .inputBox input{
+    outline: none;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    color: var(--cor-1);
+    font-family: 'Maven Pro', sans-serif;
+}
+  
+.container form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+}
+  
+.container form .row .col .inputBox input{
+    width: 100%;
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+  
+.container form .row .col .inputBox input:focus{
+    border: 2px solid rgba(10, 255, 255, 0.3);
+}
+
+.container form .row .col .flex{
+    display: flex;
+    gap:1.5rem;
+}
+  
+.container form .row .col .flex .inputBox{
+    margin-top: 5px;
+}
+  
+.container form .row .col .inputBox img{
+    height: 3.2rem;
+    margin-top: 6px;
+    filter: drop-shadow(0 0 1px #000);
+}
+  
+.container form .submit-btn{
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 1rem;
+    padding:12px;
+    font-size: 2rem;
+    background: #1e90ff;
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 500ms;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.container form .submit-btn:hover{
+    background: #147be2;
+}
+
+
+/* -------- Caixa ------- */
+
+.conta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+}
+
+.grid_container{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.caja{
+    background-color: var(--cor-p1);
+}
