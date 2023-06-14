@@ -149,12 +149,12 @@ body{
 
 .container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 2rem;
     margin: 2rem auto;
-    padding:25px;
+    padding:2.5rem;
     min-height: 100vh;
-    width: 90%
+    width: 90%;
+    border: 2px solid white
 }
 
 .container form{
@@ -187,7 +187,7 @@ body{
   
 .container form .row .col .inputBox{
     color: var(--cor-0);
-    margin:15px 0;
+    margin:2rem 0;
     font-family: 'Maven Pro', sans-serif;
 }
 
@@ -199,7 +199,16 @@ body{
     color: var(--cor-1);
     font-family: 'Maven Pro', sans-serif;
 }
-  
+ 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 .container form .row .col .inputBox span{
     margin-bottom: 10px;
     display: block;
@@ -231,7 +240,7 @@ body{
     filter: drop-shadow(0 0 1px #000);
 }
   
-.container form .submit-btn{
+.submit-btn{
     border: none;
     outline: none;
     width: 100%;
@@ -240,32 +249,117 @@ body{
     font-size: 2rem;
     background: #1e90ff;
     color:#fff;
-    margin-top: 5px;
+    margin-top: 4rem;
     cursor: pointer;
     transition: all 500ms;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Maven Pro', sans-serif;
 }
   
-.container form .submit-btn:hover{
+.submit-btn:hover{
     background: #147be2;
 }
 
 
 /* -------- Caixa ------- */
 
-.conta{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.compra{
     width: 50%;
     height: 100vh;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 2rem;
+    padding: 1.5rem;
 }
 
-.grid_container{
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr);
+.produtos{
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid green; */
+    overflow-y: scroll;
+}
+.compra__titulo{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--cor-0);
+    margin-bottom: 2rem;
 }
 
-.caja{
-    background-color: var(--cor-p1);
+.produto_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: .5rem;
+    color: var(--cor-0);
+    font-family: 'Maven Pro',  sans-serif;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+    width: 100%;
+}
+
+.compra__descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 44rem;
+    background-color: var(--cor-3);
+    border-radius: 1rem;
+}
+
+.compra__descricao h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.compra__descricao p{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+}
+
+.produto{
+    filter:drop-shadow(-1px 1px 2px rgba(10, 255, 255, 0.3));
+    width: 8rem;
+    height: 10rem;
+    border-radius: 1rem;
+}
+
+.produto__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+/* ------ TOTAL ------ */
+
+.total{
+    margin-top: 5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    width: 100%;
+    height: 20rem;
+    color: var(--cor-0);
+    font-family: 'Maven Pro',  sans-serif;
+    padding: 4rem;
+}
+
+.subtotal{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.frete{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.valor__total{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5rem;
 }
