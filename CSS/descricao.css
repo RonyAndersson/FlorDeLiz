@@ -157,24 +157,20 @@ body{
     width: 90%;
     height: 100vh;
     overflow: hidden;
-    border: 2px solid darkcyan;
 }
 
 .jogo{
     display: flex;
     width: 80%;
-    border: 1px solid gainsboro;
 }
 
 .jogo__img{
     width: 40%;
-    border: 1px solid orange;
 }
 
 .box_container{
     padding: 2rem;
     width: 60%;
-    border: 1px solid red;
 }
 
 .image{
